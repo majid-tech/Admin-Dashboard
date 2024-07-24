@@ -1,37 +1,161 @@
-body,
-html {
-  height: 100%;
+* {
+  padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
-  text-align: center;
-  height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
   display: grid;
-  gap: 5px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr; /* Assuming you have two rows: one for the header and one for the main content */
+  height: 100vh; /* Ensure the grid takes full viewport height */
 }
 
 .container div {
   padding: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
 }
 
 .header {
-  grid-area: 1 / 2 / 2 /6;
-  background-color: aquamarine;
+  grid-column: 2 / -1; /* Span across both columns */
+  grid-row: 1 / 2;
+}
+
+.round-image{
+  border-radius: 50%;
+  width: 40px;
+}
+
+img {
+  width: 20px;
+}
+
+.header .top-header input[type="search"] {
+  border-radius: 12px;
+  border: 1px solid gainsboro;
+  width: 500px;
+  height: 20px;
+}
+
+form {
+  display: flex;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-right {
+  display: flex;
+  gap: 30px;
+}
+
+.bottom-right a {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: white;
+  background-color: royalblue;
+  border-radius: 25px;
+}
+
+.bottom-left {
+  display: flex;
+  gap: 40px;
+}
+
+.bottom-left span {
+  display: block;
 }
 
 .sidebar {
-  grid-area: 1 / 1 / 6 / 2;
   background-color: royalblue;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1; /* Span from the second row to the last row */
+  font-weight: bold;
+}
+
+.dashboard {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard img {
+  width: 40px;
+}
+
+.sidebar div.icons {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .main-content {
-  grid-area: 2 / 2 / 6 / 6;
-  background-color: burlywood;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  background-color: #ecf0f1;
+}
+
+.projects {
+  grid-column: 1 / 2;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid orange;
+}
+
+.project h4, p {
+  margin-bottom: 30px;
+}
+
+.announcements {
+  grid-column: 2 / 3;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+hr {
+  margin: 20px;
+}
+
+.trending {
+  grid-column: 2 / 3;
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.trending .trending-item {
+  margin-bottom: 10px;
 }

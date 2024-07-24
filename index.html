@@ -1,20 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- creating a grid container -->
    <div class="container">
-    <div class="header">Header</div>
-    <div class="sidebar">
-      <div class="dashboard">
-        <img src="" alt="">
+
+    <div class="header">
+      <div class="top-header">
+        <form action="">
+          <img src="Assets/magnify.svg" alt="">
+          <input type="search" name="search" id="search">
+        </form>
+
+        <div class="top-right">
+          <img src="Assets/bell.svg" alt="">
+          <img src="Assets/IMG_0018.jpeg" class="round-image" alt="">
+          <span>Mohammed Majid</span>
+        </div>
+      </div>
+
+      <div class="bottom-header">
+        <div class="bottom-left">
+          <img src="Assets/IMG_0018.jpeg" class="round-image" alt="pic">
+          <p>Hi there, <span class="name">Mohammed Majid</span></p>
+        </div>
+        <div class="bottom-right">
+          <a href="#">New</a>
+          <a href="#">Upload</a>
+          <a href="#">Share</a>
+        </div>
       </div>
     </div>
-    <div class="main-content">Main Content</div>
+
+    <div class="sidebar blue">
+      <div class="dashboard">
+          <img src="Assets/view-dashboard.svg" alt="">Dashboard
+      </div>
+
+      <div>
+        <div class="icons"><img src="Assets/home-circle-outline.svg" alt="">Home</div>
+        <div class="icons"><img src="Assets/card-account-details-outline.svg" alt="">Profile</div>
+        <div class="icons"><img src="Assets/message.svg" alt="">Messages</div>
+        <div class="icons"><img src="Assets/history.svg" alt="">History</div>
+        <div class="icons"><img src="Assets/calendar-check.svg" alt="">Tasks</div>
+        <div class="icons"><img src="Assets/account-multiple.svg" alt="">Communities</div>
+      </div>
+      
+      <div>
+        <div class="icons"><img src="Assets/cog.svg" alt="">Settings</div>
+        <div class="icons"><img src="Assets/help-box.svg" alt="">Support</div>
+        <div class="icons"><img src="Assets/shield-lock.svg" alt="">Privacy</div>
+      </div>
+
+    </div>
+
+    <main class="main-content">
+      <section class="projects">
+          <h2>Your Projects</h2>
+          <div class="project-grid">
+              <div class="project">
+                <h4>Super Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ullam aspernatur corrupti excepturi repellat! Dolorem delectus soluta nesciunt laboriosam animi dolorum quibusdam sequi ullam porro, ex at voluptatibus fugiat suscipit!</p>
+              </div>
+              <div class="project"><h4>Less Cool Project</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ullam aspernatur corrupti excepturi repellat! Dolorem delectus soluta nesciunt laboriosam animi dolorum quibusdam sequi ullam porro, ex at voluptatibus fugiat suscipit!</p>
+              </div>
+              <div class="project"><h4>Impossible App</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ullam aspernatur corrupti excepturi repellat! Dolorem delectus soluta nesciunt laboriosam animi dolorum quibusdam sequi ullam porro, ex at voluptatibus fugiat suscipit!</p>
+              </div>
+              <div class="project"><h4>Easy Peasy App</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ullam aspernatur corrupti excepturi repellat! Dolorem delectus soluta nesciunt laboriosam animi dolorum quibusdam sequi ullam porro, ex at voluptatibus fugiat suscipit!</p>
+              </div>
+              <div class="project"><h4>Ad Blocker</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ullam aspernatur corrupti excepturi repellat! Dolorem delectus soluta nesciunt laboriosam animi dolorum quibusdam sequi ullam porro, ex at voluptatibus fugiat suscipit!</p>
+              </div>
+              <div class="project"><h4>Money Maker</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ullam aspernatur corrupti excepturi repellat! Dolorem delectus soluta nesciunt laboriosam animi dolorum quibusdam sequi ullam porro, ex at voluptatibus fugiat suscipit!</p>
+              </div>
+          </div>
+      </section>
+      <section class="announcements">
+          <h2>Announcements</h2>
+          <div class="announcement"><h4>Site Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis nihil quas, molestias dolorum voluptatem?</p>
+          </div>
+          <hr>
+          <div class="announcement"><h4>Community Share Day</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sit eius odio? Illo, deleniti consequuntur.</p>
+          </div>
+          <hr>
+          <div class="announcement"><h4>Updated Privacy Policy</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum tempore earum modi labore ducimus consequatur.</p>
+          </div>
+      </section>
+      <section class="trending">
+          <h2>Trending</h2>
+          <div class="trending-item">World Peace Builder</div>
+          <div class="trending-item">Super Cool Project</div>
+          <div class="trending-item">Life Changing App</div>
+          <div class="trending-item">No Traffic Maker</div>
+      </section>
+  </main>
    </div>
 </body>
 </html>
